@@ -46,6 +46,9 @@ namespace Optional.Async
                 some: async val => (await mapping(val)),
                 none: async () => Option.None<TResult>());
 
+        public static async Task<Option<T, TException>> FilterAsync<T, TException>(this Task<Option<T>> optionTask, Func<T, Task<bool>> predicate, TException exception) =>
+            await (await optionTask).FilterAsync(predicate).WithException(exception);
+
         public static Task<Option<TResult, TException>> FlatMapAsync<T, TException, TResult>(this Option<T, TException> option, Func<T, Task<Option<TResult, TException>>> mapping) =>
             option.MatchAsync(
                 some: async val => await mapping(val),

@@ -9,6 +9,10 @@
     <Copyright>Dobromir Nikolov</Copyright>
     <Authors>Dobromir Nikolov</Authors>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageProjectUrl>https://github.com/dnikolovv/optional-async</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/dnikolovv/optional-async</RepositoryUrl>
+    <RepositoryType>Git</RepositoryType>
+    <PackageTags>optional, monad, async, functional, maybe, either</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
