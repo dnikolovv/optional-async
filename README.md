@@ -4,7 +4,7 @@ Async extensions for Nils Luck's Optional library.
 
 It allows you to chain `Task<Option<T>>` and `Task<Option<T, TException>>` without having to use `await`.
 
-Since version `5.0`, the `Optional` library will include its own async extensions. However, at this point they don't provide as much flexibility.
+Since version `5.0`, the `Optional` library will include its own async extensions. However, at this point they don't provide as much flexibility. To avoid conflicts, the namespace of this library has been changed to `Optional.Async.Enahnced`.
 
 > Note: `Optional.Async` was not meant to be published as a standalone library. It's a collection of extension methods that I had to implement on my own while working with `Optional`. There are currently no tests and I don't plan on extensively maintaining it. Still, most of the extensions you'll find here are currently being used/have been used for the past year in production code without issues.
 
