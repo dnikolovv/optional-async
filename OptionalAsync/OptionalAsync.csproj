@@ -13,10 +13,12 @@
     <RepositoryUrl>https://github.com/dnikolovv/optional-async</RepositoryUrl>
     <RepositoryType>Git</RepositoryType>
     <PackageTags>optional, monad, async, functional, maybe, either</PackageTags>
+    <Version>1.4.0</Version>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Optional" Version="4.0.0" />
+    <PackageReference Include="System.Threading.Tasks.Extensions" Version="4.5.4" />
   </ItemGroup>
 
 </Project>
